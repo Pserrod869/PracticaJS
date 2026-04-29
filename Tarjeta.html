@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="Tarjeta.css"> <title>Juego de Adivinar</title>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Adivina el número entre 0 - 10</h3>
+        <input type="number" id="inputNumero" placeholder="0">
+        <button id="btnValidar">Validar</button>
+
+        <p id="mensaje">El juego ha comenzado</p>
+        <p id="contadorFallos">0</p>
+    </div>
+
+    <div id="ventanaModal" style="display: none;">
+        <h2>🏆</h2>
+        <h3>FELICIDADES HAS GANADO</h3>
+        <p id="textoIntentosModal"></p>
+        <button id="btnCerrar">CERRAR</button>
+    </div>
+
+    <script src="Tarjeta.js"></script>
+</body>
+</html>

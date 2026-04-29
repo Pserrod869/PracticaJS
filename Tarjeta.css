@@ -1,0 +1,109 @@
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor Principal del Juego */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo de Inputs y Botones */
+input[type="number"] {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #4a90e2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Mensajes y Contador */
+#mensaje {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #555;
+}
+
+#contadorFallos {
+    font-size: 2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+/* Ventana Modal (El mensaje de "Ganaste") */
+#ventanaModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 1000;
+    width: 300px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+    border: none !important; /* Sobrescribo el borde simple por uno elegante */
+}
+
+#ventanaModal h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+#ventanaModal h3 {
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+#btnCerrar {
+    background-color: #c0392b;
+    width: 100%;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+#btnCerrar:hover {
+    background-color: #a93226;
+}
